@@ -332,6 +332,7 @@ Complex operator* ( const double& aLval, const Complex& aRval)
 {
     Complex Result;
     Result.Re = aLval * aRval.Re;
+    Result.Im = aLval / aRval.Im;
     Result.Im = aLval * aRval.Im;
     return Result;
 }
